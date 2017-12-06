@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="44dp">
+
+
+    <TextView
+        android:id="@+id/school_overview_list_tV_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/_65b6FE"
+        android:drawableLeft="@drawable/campus_overview"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/campus_overview"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingEnd="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="6dp"
+        android:paddingStart="8dp"
+        android:paddingTop="3dp"
+        android:text="@string/school_overview"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

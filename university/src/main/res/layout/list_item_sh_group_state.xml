@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/sh_group_item_group_state"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="@dimen/group_tab_item_padding"
+        android:paddingStart="@dimen/group_tab_item_padding"
+        android:paddingEnd="@dimen/group_tab_item_padding"
+        android:paddingRight="@dimen/group_tab_item_padding"
+        android:textSize="@dimen/font_size_10sp"
+        android:gravity="center"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/bg_sh_group_state_item_blue"/>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ghostwhite"
+              android:orientation="vertical">
+
+    <com.zhiyou.colleageapp.appui.widget.AppTitleBar
+        android:id="@+id/app_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lovered"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/love_card"
+            style="@style/weight_ver"
+            android:layout_weight="3"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/def_50dp"
+                android:layout_height="@dimen/def_50dp"
+                android:src="@mipmap/love_card"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/def_20dp"
+                android:text="表白卡"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/love_video"
+            style="@style/weight_ver"
+            android:layout_weight="3"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/def_50dp"
+                android:layout_height="@dimen/def_50dp"
+                android:src="@mipmap/love_say"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/def_20dp"
+                android:text="亲口说"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/love_study"
+            style="@style/weight_ver"
+            android:layout_weight="3"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/def_50dp"
+                android:layout_height="@dimen/def_50dp"
+                android:src="@mipmap/love_pro"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/def_20dp"
+                android:text="爱的专题"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/weight_ver"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/def_25dp"
+                android:layout_marginTop="@dimen/def_20dp"
+                android:src="@mipmap/love_text"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

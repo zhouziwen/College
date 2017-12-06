@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.zhiyou.colleageapp.appui.widget.ContactItemView
+        android:id="@+id/chat_apply_and_notify_item"
+        style="@style/header_contact_item"
+        app:contactItemImage="@mipmap/contact_apply_notify"
+        app:contactItemName="@string/Application_and_notify"
+        />
+
+    <ImageView
+        style="@style/imageViewDivider"/>
+
+    <com.zhiyou.colleageapp.appui.widget.ContactItemView
+        android:id="@+id/chat_nearby_person"
+        style="@style/header_contact_item"
+        android:background="@drawable/bg_selector_item_common"
+        app:contactItemImage="@mipmap/contact_nearby"
+        app:contactItemName="@string/nearby_person"/>
+
+    <ImageView
+        style="@style/imageViewDivider"/>
+
+    <com.zhiyou.colleageapp.appui.widget.ContactItemView
+        android:id="@+id/chat_group_item"
+        style="@style/header_contact_item"
+        android:background="@drawable/bg_selector_item_common"
+        app:contactItemImage="@mipmap/contact_group_chat"
+        app:contactItemName="@string/group_chat"/>
+
+    <ImageView
+        style="@style/imageViewDivider"/>
+
+    <com.zhiyou.colleageapp.appui.widget.ContactItemView
+        android:id="@+id/chat_school_motto"
+        style="@style/header_contact_item"
+        app:contactItemImage="@mipmap/contact_school_motto"
+        app:contactItemName="@string/school_motto"
+        />
+
+</LinearLayout>

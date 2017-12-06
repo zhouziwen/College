@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical"
+              android:padding="@dimen/def_15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhiyou.colleageapp.appui.widget.CircleImageView
+            android:id="@+id/taoyu_detail_head_avar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/life_avar"/>
+
+        <TextView
+            android:id="@+id/taoyu_detail_head_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/def_10dp"
+            android:layout_toRightOf="@id/taoyu_detail_head_avar"
+            android:text="英雄联盟"
+            android:textColor="#e000"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:id="@+id/taoyu_detail_head_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/taoyu_detail_head_nick"
+            android:layout_below="@id/taoyu_detail_head_nick"
+            android:layout_marginTop="3dp"
+            android:text="6个小时前"
+            android:textColor="#e000"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/taoyu_detail_head_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#4000"
+            android:padding="3dp"
+            android:text="16浏览"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/taoyu_detail_head_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/taoyu_tv_bg"
+        android:padding="@dimen/def_15dp"
+        android:text="￥ 0.00"
+        android:textColor="#df00"
+        android:textSize="@dimen/font_size_18sp"/>
+
+    <TextView
+        android:id="@+id/taoyu_detail_head_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/def_10dp"
+        android:layout_marginTop="@dimen/def_10dp"
+        android:text="暂无描述"
+        android:textColor="#d000"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/taoyu_detail_head_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@mipmap/life_position"
+        android:drawablePadding="@dimen/def_5dp"
+        android:text="@string/cometo"
+        android:textColor="#6000"
+        android:textSize="13sp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="@dimen/def_10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/life_beautiful_girl"/>
+</LinearLayout>

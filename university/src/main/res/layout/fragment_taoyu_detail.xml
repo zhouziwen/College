@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ghostwhite">
+
+    <com.zhiyou.colleageapp.appui.widget.AppTitleBar
+        android:id="@+id/app_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/app_memu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/life_common_zan"
+            style="@style/weight_hor"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/life_common_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/def_10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/def_30dp"
+                    android:layout_height="@dimen/def_30dp"
+                    android:padding="7dp"
+                    android:src="@mipmap/life_zan"/>
+
+                <TextView
+                    android:id="@+id/life_common_zannum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="132"
+                    android:textColor="#6000"
+                    android:textSize="@dimen/font_size_12sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/life_common_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/def_25dp"
+                android:layout_marginStart="@dimen/def_25dp"
+                android:text="+1"
+                android:textColor="#af00"
+                android:textSize="@dimen/font_size_14"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/life_common_comment"
+            style="@style/weight_hor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/def_30dp"
+                android:layout_height="@dimen/def_30dp"
+                android:padding="7dp"
+                android:src="@mipmap/life_comment"/>
+
+            <TextView
+                android:id="@+id/life_common_commentnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="#6000"
+                android:textSize="@dimen/font_size_12sp"/>
+        </LinearLayout>
+
+        <Button
+            style="@style/weight_hor"
+            android:background="@drawable/bt_blue"
+            android:text="加好友"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/app_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/app_memu_bar"
+        android:layout_below="@id/app_title_bar"
+        android:divider="@color/ghostwhite"
+        android:dividerHeight="@dimen/def_10dp"/>
+
+</RelativeLayout>

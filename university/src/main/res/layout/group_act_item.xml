@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingRight="@dimen/def_10dp"
+                android:paddingTop="@dimen/def_10dp">
+
+
+    <com.zhiyou.colleageapp.appui.widget.CircleImageView
+        android:id="@+id/sh_group_item_group_icon"
+        style="@style/user_icon"
+        android:src="@drawable/test_group_01"
+        app:border_color="@android:color/transparent"
+        app:border_width="0dp"
+        app:is_img="true"/>
+
+    <TextView
+        android:id="@+id/sh_group_item_add"
+        style="@style/group_add"
+        android:background="@drawable/selector_login_btn_bg"/>
+
+    <TextView
+        android:id="@+id/sh_group_item_name"
+        style="@style/group_item_name"
+        android:text="篮球对对碰"/>
+
+    <TextView
+        android:id="@+id/sh_group_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sh_group_item_name"
+        android:layout_toEndOf="@+id/sh_group_item_group_icon"
+        android:layout_toRightOf="@+id/sh_group_item_group_icon"
+        android:text="本群共92人（女生30人）"
+        android:textColor="@color/_999999"
+        android:textSize="@dimen/font_size_12sp"/>
+
+    <TextView
+        android:id="@+id/sh_group_item_total"
+        style="@style/group_member_total"/>
+
+    <RelativeLayout
+        android:id="@+id/sh_group_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sh_group_item_group_icon"
+        android:layout_marginBottom="@dimen/general_margin"
+        android:layout_toEndOf="@id/sh_group_item_group_icon"
+        android:layout_toRightOf="@id/sh_group_item_group_icon"
+        android:background="@drawable/bg_sh_group_layout_content"
+        android:paddingEnd="@dimen/general_margin"
+        android:paddingLeft="@dimen/general_margin"
+        android:paddingRight="@dimen/general_margin"
+        android:paddingStart="@dimen/general_margin">
+
+        <!--<com.zhiyou.colleageapp.appui.widget.listview.HorizontalListView-->
+        <!--android:id="@+id/sh_group_item_group_state_listView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/group_state_listview_height"-->
+        <!--android:layout_marginBottom="@dimen/general_margin_right_left"-->
+        <!--android:layout_marginTop="@dimen/general_margin"/>-->
+
+        <LinearLayout
+            android:id="@+id/sh_group_item_group_state_listView"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="@dimen/general_margin_right_left"
+            android:layout_marginTop="@dimen/general_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/def_o_blue"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="新群"
+                android:textColor="@color/main_tab_on"
+                android:textSize="@dimen/font_size_12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/def_10dp"
+                android:background="@drawable/def_o_red"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="招募中"
+                android:textColor="@color/vote_2"
+                android:textSize="@dimen/font_size_12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sh_group_item_group_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sh_group_item_group_state_listView"
+            android:layout_marginBottom="@dimen/general_margin"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="你的课外时间都是怎么度过的呢？睡觉？玩儿电脑？长此以往身体怎么能行，一起感受篮球..."
+            android:textColor="@color/_999999"/>
+
+        <!--<com.zhiyou.colleageapp.appui.widget.listview.HorizontalListView-->
+        <!--android:id="@+id/sh_group_item_group_pic_listView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_below="@id/sh_group_item_group_summary"-->
+        <!--android:layout_marginBottom="@dimen/general_margin_right_left"/>-->
+
+        <LinearLayout
+            android:id="@+id/sh_group_item_group_pic_listView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/sh_group_item_group_summary"
+            android:layout_marginBottom="@dimen/general_margin_right_left"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/weight_hor"
+                android:src="@mipmap/group_act_iv1"/>
+
+            <ImageView
+                style="@style/weight_hor"
+                android:src="@mipmap/group_act_iv2"/>
+
+            <ImageView
+                style="@style/weight_hor"
+                android:src="@mipmap/group_act_iv3"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/group_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sh_group_item_group_pic_listView"
+            android:layout_marginBottom="12dp"
+            android:text="@string/group_member"
+            android:textColor="@color/_999999"
+            android:textSize="@dimen/font_size_12sp"/>
+
+        <com.zhiyou.colleageapp.appui.widget.listview.HorizontalInterceptFalseListView
+            android:id="@+id/sh_group_item_group_member_listView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/group_label"
+            android:layout_marginBottom="14dp"
+            android:focusable="false"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sh_group_item_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sh_group_layout_content"
+        android:layout_marginBottom="@dimen/general_margin"
+        android:layout_marginEnd="@dimen/general_margin_right_left"
+        android:layout_marginRight="@dimen/general_margin_right_left"
+        android:layout_toEndOf="@id/sh_group_item_group_icon"
+        android:layout_toRightOf="@id/sh_group_item_group_icon"
+        android:drawableLeft="@drawable/group_location"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/group_location"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="校园篮球场  1km"
+        android:textColor="@color/_CCCCCC"
+        android:textSize="@dimen/font_size_12sp"/>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height">
+
+
+    <TextView
+        android:id="@+id/app_title_back"
+        android:layout_width="@dimen/title_bar_height"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ease_common_tab_bg"
+        android:drawableLeft="@drawable/fragment_back_arrow"
+        android:scaleType="center"/>
+
+    <TextView
+        android:id="@+id/app_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/font_black_light"
+        android:textSize="@dimen/font_size_15"/>
+
+    <TextView
+        android:id="@+id/app_title_action"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ease_common_tab_bg"
+        android:gravity="center"
+        android:minWidth="@dimen/title_bar_height"
+        android:textColor="@color/font_black_light"
+        android:textSize="@dimen/font_size_13sp"/>
+
+    <View
+        style="@style/dividerTitleBar"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

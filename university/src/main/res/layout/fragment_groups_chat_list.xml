@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_fragment"
+              android:orientation="vertical">
+
+    <com.zhiyou.colleageapp.appui.widget.AppTitleBar
+        android:id="@+id/app_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        app:back_img="@drawable/fragment_back_arrow"
+        app:bar_title="@string/group_chat"
+        />
+
+    <include layout="@layout/ease_search_bar"/>
+
+    <com.zhiyou.colleageapp.appui.widget.listview.StickyListHeadersListView
+        android:id="@+id/friend_group_chat_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

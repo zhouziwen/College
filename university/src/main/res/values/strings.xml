@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">我的大学</string>
+    <string name="person_title">我的</string>
+    <string-array name="person_item_title">
+        <item>我的状态</item>
+        <item>表白墙</item>
+        <item>做任务</item>
+        <item>校园币</item>
+        <item>我的积分</item>
+        <item>买卖记录</item>
+        <item>我的收藏</item>
+        <item>系统设置</item>
+    </string-array>
+
+    <string-array name="mine_item_info">
+        <item>头像</item>
+        <item>昵称</item>
+        <item>账号/手机号</item>
+        <item>二维码名片</item>
+        <item>性别</item>
+        <item>家乡</item>
+        <item>院校</item>
+        <item>院系</item>
+        <item>专业</item>
+        <item>学号</item>
+    </string-array>
+
+    <string name="college">校园</string>
+    <string name="life">生活</string>
+    <string name="friends">朋友</string>
+    <string name="msg">消息</string>
+    <string name="mine">我的</string>
+
+    <string name="school">学校</string>
+    <string name="person">人</string>
+    <string name="group">群组</string>
+    <string name="trends">动态</string>
+    <string name="society">社会</string>
+    <string name="school_overview">院校概况</string>
+    <string name="newsLetter">资讯速递</string>
+    <string name="hot">热门推荐</string>
+    <string name="near_by">我的附近</string>
+    <string-array name="school_inner">
+
+        <item name="school_overview">院校概况</item>
+        <item name="school_mien">校园风采</item>
+        <item name="school_celebrity">名人榜</item>
+        <item name="school_info">校园资讯</item>
+
+    </string-array>
+
+    <string name="on_loading">加载中。。。</string>
+    <string name="registering">注册中。。。</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_fail">注册失败</string>
+    <string name="register_verify_code_send">短信已发送请查收验证码</string>
+    <string name="register_verify_code_error">获取验证码失败</string>
+
+    <string name="on_loading_fail">加载失败</string>
+    <string name="g_update_success">更新成功</string>
+    <string name="g_update_fail">更新失败</string>
+
+    <string name="start">正在加载数据</string>
+    <string name="local_fail">本地异常</string>
+    <string name="fail">失败</string>
+    <string name="publish">我发表的</string>
+    <string name="comment">我评论的</string>
+    <string name="pub">发表</string>
+
+    <string name="g_affirm">确认</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="test_user_name">蒂芬斯蒂芬</string>
+    <string name="sh_group_hint">输入关键词或群号</string>
+    <string name="group_member">群组成员</string>
+    <string name="group_add">加入群组</string>
+    <string name="school_motto">校训录</string>
+    <string name="nearby_person">附近的人</string>
+    <string name="dynamic">动态</string>
+    <string name="create_group">创建群组</string>
+    <string name="add_group">添加群组</string>
+    <string name="add_group_member_success">添加成员成功</string>
+    <string name="group_list_fail">获取群组列表失败</string>
+    <string name="group_member_list_fail">获取群组成员列表失败</string>
+    <string name="group_member_list_success">获取群组成员列表失败</string>
+    <string name="empty"></string>
+
+    <!--环信的-->
+    <string name="voice_prefix">[Voice]</string>
+    <string name="video_call">[Video call]</string>
+    <string name="dynamic_expression">[Dynamic expression]</string>
+    <string name="gorup_not_found">找不到这个群组</string>
+    <string name="contact">通讯录</string>
+    <string name="test">test</string>
+    <string name="sign">签到</string>
+    <string name="add_friend">添加好友</string>
+    <string name="friend_shake_it_off">摇一摇</string>
+    <string name="friend_create_circle">创建圈子</string>
+    <string name="user_not_exists">用户不存在</string>
+    <string name="group_add_self_illegal">不能添加自己</string>
+    <string name="g_cancel">取消</string>
+    <string name="g_wait_loading">请稍等。。。</string>
+    <string name="group_detail">群详情</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_init_wait">正在初始化，请稍后...</string>
+    <string name="register_verify_code_get">获取验证码</string>
+    <string name="register_request_code">正在请求验证码</string>
+
+    <string name="create_groups">创建群组</string>
+    <string name="contact_delete_begin">正在删除。。。</string>
+    <string name="global_delete_success">删除成功</string>
+    <string name="global_delete_fail">删除失败</string>
+    <string name="cometo">来自郑州大学</string>
+    <string name="friend_mine_nearby">我的附近</string>
+    <string name="friend_nearby_recommend">热门推荐</string>
+    <string name="g_prompt">提示</string>
+    <string name="n_state_unusual">状态异常，可能长时间未操作导致。</string>
+    <string name="global_account_login_in_other_place">您的账号在其他地方登录，重新登录？</string>
+    <string name="l_relogin">重新登录</string>
+    <string name="login_please">请登录</string>
+    <string name="contact_user_name">用户名</string>
+    <string name="msg_quick">速信</string>
+    <string name="contact_is_finding">正在查找</string>
+    <string name="contact_finding_fail">查找失败</string>
+    <string name="contact_finding_success">查找成功</string>
+    <string name="contact_add_fail">添加失败</string>
+    <string name="contact_add_success">添加成功</string>
+    <string name="contact_cannot_delete_self">不能删除自己</string>
+    <string name="contact_cannot_add_black_self">不能把自己加入黑名单</string>
+    <string name="global_send">发送</string>
+    <string name="contact_invite_refuse">拒绝</string>
+    <string name="msg_load_fail">加载消息失败</string>
+    <string name="user_info">个人资料</string>
+    <string name="global_operate_success">操作成功</string>
+    <string name="global_operate_fail">操作失败</string>
+    <string name="friend_detail_send_msg">发消息</string>
+    <string name="friend_info_concern_topic">关注话题</string>
+    <string name="friend_detail_add_group">加入群组</string>
+    <string name="global_person_info">个人信息</string>
+    <string name="friend_detail_add_friend">加好友</string>
+    <string name="edit_input">请输入</string>
+    <string name="on_modify">正在修改</string>
+    <string name="on_modify_success">修改成功</string>
+    <string name="on_modify_fail">修改失败</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="emoji_string_no_support">暂不支持输入Emoji表情符号</string>
+    <string name="uploading">提交中。。。</string>
+    <string name="upload_fail">上传失败</string>
+    <string name="upload_success">上传成功</string>
+    <string name="select_pic">选择照片</string>
+    <string name="make_photo">拍照</string>
+    <string name="chose">请选择</string>
+    <string name="not_login">未登录</string>
+</resources>

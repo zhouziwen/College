@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/general_margin_right_left">
+
+    <com.zhiyou.colleageapp.appui.widget.CircleImageView
+        android:id="@+id/sh_group_item_group_icon"
+        style="@style/user_icon"
+        android:src="@drawable/test_group_01"
+        app:border_color="@android:color/transparent"
+        app:border_width="0dp"
+        app:is_img="true"
+        />
+
+    <TextView
+        android:id="@+id/sh_group_item_add"
+        style="@style/group_add"
+        />
+
+    <TextView
+        android:id="@+id/sh_group_item_name"
+        style="@style/group_item_name"
+        />
+
+
+    <TextView
+        android:id="@+id/sh_group_item_total"
+        style="@style/group_member_total"
+        />
+
+    <RelativeLayout
+        android:id="@+id/sh_group_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sh_group_item_group_icon"
+        android:layout_marginBottom="@dimen/general_margin"
+        android:layout_toEndOf="@id/sh_group_item_group_icon"
+        android:layout_toRightOf="@id/sh_group_item_group_icon"
+        android:background="@drawable/bg_sh_group_layout_content"
+        android:paddingEnd="@dimen/general_margin"
+        android:paddingLeft="@dimen/general_margin"
+        android:paddingRight="@dimen/general_margin"
+        android:paddingStart="@dimen/general_margin">
+
+        <com.zhiyou.colleageapp.appui.widget.listview.HorizontalListView
+            android:id="@+id/sh_group_item_group_state_listView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/group_state_listview_height"
+            android:layout_marginBottom="@dimen/general_margin_right_left"
+            android:layout_marginTop="@dimen/general_margin"
+            />
+
+        <TextView
+            android:id="@+id/sh_group_item_group_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sh_group_item_group_state_listView"
+            android:layout_marginBottom="@dimen/general_margin"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:textColor="@color/_666666"/>
+
+
+        <TextView
+            android:id="@+id/group_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sh_group_item_group_summary"
+            android:layout_marginBottom="12dp"
+            android:text="@string/group_member"
+            android:textColor="@color/_999999"
+            android:textSize="@dimen/font_size_12sp"/>
+
+        <com.zhiyou.colleageapp.appui.widget.listview.HorizontalListView
+            android:id="@+id/sh_group_item_group_member_listView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/group_label"
+            android:layout_marginBottom="14dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sh_group_item_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sh_group_layout_content"
+        android:layout_marginBottom="@dimen/general_margin"
+        android:layout_marginEnd="@dimen/general_margin_right_left"
+        android:layout_marginRight="@dimen/general_margin_right_left"
+        android:layout_toEndOf="@id/sh_group_item_group_icon"
+        android:layout_toRightOf="@id/sh_group_item_group_icon"
+        android:drawableLeft="@drawable/group_location"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/group_location"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="校园篮球场  1km"
+        android:textColor="@color/_CCCCCC"
+        android:textSize="@dimen/font_size_12sp"
+        />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical"
+              android:padding="@dimen/def_15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhiyou.colleageapp.appui.widget.CircleImageView
+            android:id="@+id/common_detail_item_avar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/life_avar"/>
+
+        <TextView
+            android:id="@+id/common_detail_item_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/def_10dp"
+            android:layout_toRightOf="@id/common_detail_item_avar"
+            android:text="英雄联盟"
+            android:textColor="#e000"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/common_detail_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="一个小时前"
+            android:textColor="#6000"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/common_detail_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/def_35dp"
+        android:layout_marginTop="@dimen/def_5dp"
+        android:text="说真的每个人有点个人爱好是正常的，你对他包容理解些他也会更爱你！"
+        android:textColor="#a000"
+        android:textSize="12sp"/>
+</LinearLayout>

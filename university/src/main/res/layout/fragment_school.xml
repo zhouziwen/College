@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/school_fragment_banner"
+        android:name="com.zhiyou.colleageapp.appui.widget.CycleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        tools:layout="@layout/view_cycle_viewpager_content"/>
+
+    <com.zhiyou.colleageapp.appui.widget.listview.HorizontalListView
+        android:id="@+id/school_horizontalListView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_margin="@dimen/general_margin"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginStart="@dimen/general_margin"
+        android:layout_marginEnd="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:layout_marginBottom="15dp"
+        app:dividerWidth="5dp"
+        android:layout_below="@id/school_fragment_banner"
+        android:layout_height="44dp"/>
+    <TextView
+        android:id="@+id/school_tv_newsletter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/school_horizontalListView"
+        android:textColor="@color/main_tab_off"
+        android:paddingLeft="@dimen/general_margin"
+        android:text="@string/newsLetter"/>
+
+    <GridView
+        android:id="@+id/school_newsletter_gridV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="10dp"
+        android:layout_below="@id/school_tv_newsletter"/>
+
+
+</RelativeLayout>

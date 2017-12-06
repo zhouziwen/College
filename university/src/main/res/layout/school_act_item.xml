@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/life_play_item_lay"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <include layout="@layout/life_avar_zan_share"/>
+
+    <TextView
+        android:id="@+id/life_play_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/def_15dp"
+        android:paddingRight="@dimen/def_15dp"
+        android:text="校花评选比赛火热进行中！"
+
+        android:textColor="#000"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/life_play_item_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:lines="2"
+        android:paddingLeft="@dimen/def_15dp"
+        android:paddingRight="@dimen/def_15dp"
+        android:text="大家都来为你心中的校花投上一票吧！"
+        android:textColor="@color/_999999"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/life_play_item_bigiv"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:padding="@dimen/def_10dp"
+        android:src="@mipmap/life_beautiful_girl"/>
+</LinearLayout>

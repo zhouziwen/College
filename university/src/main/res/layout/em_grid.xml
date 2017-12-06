@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+    <com.zhiyou.colleageapp.appui.widget.CircleImageView
+        android:id="@+id/group_member_iv_avatar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/em_smiley_add_btn"
+        />
+
+    <TextView
+        android:id="@+id/group_member_tv_name"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group_member_iv_avatar"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:text="hah"
+        android:textSize="@dimen/font_size_13sp"/>
+
+    <ImageView
+        android:id="@+id/group_member_delete_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/group_member_iv_avatar"
+        android:src="@drawable/em_appitem_del_btn"
+        android:visibility="visible"/>
+
+</RelativeLayout>

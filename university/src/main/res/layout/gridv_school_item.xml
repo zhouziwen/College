@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/gridv_school_item_width"
+                android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/gridView_school_item_imgV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gridv_school_item_width"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/griView_school_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridView_school_item_imgV"
+        android:lines="2"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/color_666666"/>
+
+</RelativeLayout>

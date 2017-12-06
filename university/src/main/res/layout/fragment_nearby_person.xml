@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_fragment"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhiyou.colleageapp.appui.widget.AppTitleBar
+        android:id="@+id/app_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        app:bar_title="@string/nearby_person"
+        app:back_img="@drawable/fragment_back_arrow"/>
+
+    <TextView
+        android:id="@+id/hot_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/app_title_bar"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginStart="@dimen/general_margin"
+        android:layout_marginTop="@dimen/general_margin"
+        android:text="@string/hot"
+        android:textSize="13sp"/>
+
+    <com.zhiyou.colleageapp.appui.widget.listview.HorizontalListView
+        android:id="@+id/friend_person_hot_listView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/hot_label"
+        app:dividerWidth="@dimen/horizontalListView_divider"
+        />
+
+    <TextView
+        android:id="@+id/nearby_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginStart="@dimen/general_margin"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/near_by"
+        android:textSize="@dimen/font_size_13sp"
+        android:layout_below="@id/friend_person_hot_listView"/>
+
+    <ListView
+        android:id="@+id/friend_person_nearby_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/main_tab_off"
+        android:layout_below="@id/nearby_label"
+        android:dividerHeight="0.5dp"/>
+
+</RelativeLayout>

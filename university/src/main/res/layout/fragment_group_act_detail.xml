@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ghostwhite"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ghostwhite"
+        android:orientation="vertical">
+
+        <com.zhiyou.colleageapp.appui.widget.AppTitleBar
+            android:id="@+id/app_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/life_play_item_more"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@mipmap/group_act_img"
+            android:clickable="true">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/def_15dp"
+                android:orientation="vertical"
+                android:padding="@dimen/def_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="篮球对对碰"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="群号:12354526"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/def_10dp">
+
+            <TextView
+                style="@style/group_act_detail_title"
+                android:text="群介绍"/>
+
+            <TextView
+                style="@style/group_act_detail_content"
+                android:lines="2"
+                android:text="我不是网红，我只不过是一个篮球爱好者，就是想把爱好篮球的人们集中起来，独乐了不如众乐乐..."/>
+
+            <include layout="@layout/line"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/def_8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/group_act_detail_title"
+                    android:text="群成员"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/def_10dp"
+                    android:text="16"
+                    android:textColor="@color/main_tab_on"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="@dimen/def_8dp"
+                android:layout_marginTop="@dimen/def_8dp">
+
+                <TextView
+                    android:id="@+id/group_act_detail_mem_listview_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:padding="@dimen/def_5dp"
+                    android:text=">"/>
+
+                <com.zhiyou.colleageapp.appui.widget.listview.HorizontalInterceptFalseListView
+                    android:id="@+id/group_act_detail_mem_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/group_act_detail_mem_listview_next"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/def_10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/def_10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/group_act_detail_title"
+                    android:text="群空间"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/def_10dp"
+                    android:text="20"
+                    android:textColor="@color/main_tab_on"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="@dimen/def_8dp"
+                android:layout_marginTop="@dimen/def_8dp">
+
+                <TextView
+                    android:id="@+id/group_act_detail_pic_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:padding="@dimen/def_5dp"
+                    android:text=">"/>
+
+                <com.zhiyou.colleageapp.appui.widget.listview.HorizontalInterceptFalseListView
+                    android:id="@+id/group_act_detail_pic_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/group_act_detail_pic_label"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <TextView
+                style="@style/group_act_detail_title"
+                android:layout_marginTop="@dimen/def_8dp"
+                android:text="入群条件"/>
+
+            <TextView
+                style="@style/group_act_detail_content"
+                android:lines="2"
+                android:text="对群主说声：宝哥、宝哥我爱你，进来先进群详情了解群制度，家有家规，群友群规！"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/def_10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/def_10dp">
+
+            <TextView
+                style="@style/group_act_detail_title"
+                android:text="群分类"/>
+
+            <TextView
+                style="@style/group_act_detail_content"
+                android:text="运动 - 篮球"
+                android:textColor="@color/main_tab_on"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/def_10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/def_10dp">
+
+
+            <TextView
+                style="@style/group_act_detail_title"
+                android:text="群主"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/def_8dp"
+                    android:layout_marginTop="@dimen/def_8dp">
+
+                    <ImageView
+                        android:id="@+id/life_item_avar"
+                        android:layout_width="@dimen/def_45dp"
+                        android:layout_height="@dimen/def_45dp"
+                        android:src="@mipmap/life_avar"/>
+
+                    <TextView
+                        android:id="@+id/life_item_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/def_10dp"
+                        android:layout_marginTop="@dimen/def_5dp"
+                        android:layout_toRightOf="@id/life_item_avar"
+                        android:text="北城之春"
+                        android:textColor="@color/_323232"
+                        android:textSize="@dimen/font_size_13sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/life_item_nick"
+                        android:layout_marginLeft="@dimen/def_10dp"
+                        android:layout_marginTop="@dimen/def_5dp"
+                        android:layout_toRightOf="@id/life_item_avar"
+                        android:text="一天前"
+                        android:textColor="@color/_CCCCCC"
+                        android:textSize="@dimen/font_size_12sp"/>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/group_act_detail_pic_listview_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:padding="@dimen/def_5dp"
+                    android:text=">"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <TextView
+                style="@style/group_act_detail_title"
+                android:layout_marginTop="@dimen/def_8dp"
+                android:text="地址"/>
+
+            <TextView
+                style="@style/group_act_detail_content"
+                android:text="郑大西校区篮球场"/>
+
+            <include layout="@layout/line"/>
+
+            <TextView
+                style="@style/group_act_detail_title"
+                android:layout_marginTop="@dimen/def_8dp"
+                android:text="其他信息"/>
+
+            <TextView
+                style="@style/group_act_detail_content"
+                android:text="创建时间：2015-05-25"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/bt_blue"
+            android:text="加入群组"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16sp"/>
+    </LinearLayout>
+</ScrollView>

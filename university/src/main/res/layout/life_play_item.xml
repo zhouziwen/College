@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/life_play_item_lay"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:clickable="true"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/life_play_item_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_gray"
+        android:clickable="true"
+        android:paddingLeft="@dimen/def_5dp"
+        android:paddingRight="@dimen/def_5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/life_fire"
+            android:drawablePadding="@dimen/def_5dp"
+            android:padding="@dimen/def_10dp"
+            android:text="校园热门活动"
+            android:textColor="#222222"
+            android:textSize="@dimen/font_size_14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/def_10dp"
+            android:text="更多>"
+            android:textColor="@color/_CCCCCC"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ghostwhite"/>
+
+    <include layout="@layout/life_avar_zan_share"/>
+
+    <TextView
+        android:id="@+id/life_play_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/def_15dp"
+        android:paddingRight="@dimen/def_15dp"
+        android:text="校花评选比赛火热进行中！"
+        android:textColor="#000"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/life_play_item_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="@dimen/def_15dp"
+        android:paddingRight="@dimen/def_15dp"
+        android:text="大家都来为你心中的校花投上一票吧！"
+        android:textColor="@color/_999999"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/life_play_item_bigiv"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:padding="@dimen/def_10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/life_beautiful_girl"/>
+</LinearLayout>

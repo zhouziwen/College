@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/ghostwhite"
+              android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/life_fragment_banner"
+        android:name="com.zhiyou.colleageapp.appui.widget.CycleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        tools:layout="@layout/view_cycle_viewpager_content"/>
+
+    <LinearLayout
+        style="@style/life_head_title_lay"
+        android:layout_height="@dimen/part_secondlay"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/weight_hor"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/life_head_taoyu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/bt_gray_no"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/life_head_task_tv"
+                    style="@style/life_head_task_tv"
+                    android:layout_marginTop="@dimen/def_10dp"
+                    android:text="淘渔"
+                    android:textColor="@color/_666666"
+                    android:textSize="@dimen/font_size_15"/>
+
+                <TextView
+                    style="@style/life_head_task_tv"
+                    android:layout_below="@id/life_head_task_tv"
+                    android:layout_marginTop="3dp"
+                    android:text="资源共享，二次利用"
+                    android:textColor="@color/_999999"
+                    android:textSize="@dimen/font_size_12sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/def_30dp"
+                    android:layout_height="@dimen/def_30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/def_10dp"
+                    android:src="@mipmap/life_taoyu"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gainsboro"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/gainsboro"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/life_head_play"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/bt_gray_no"
+                android:clickable="true"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/life_head_task_tv_play"
+                    style="@style/life_head_task_tv"
+                    android:layout_marginTop="@dimen/def_10dp"
+                    android:text="一起玩"
+                    android:textColor="@color/_666666"
+                    android:textSize="@dimen/font_size_15"/>
+
+                <TextView
+                    style="@style/life_head_task_tv"
+                    android:layout_below="@id/life_head_task_tv_play"
+                    android:layout_marginTop="3dp"
+                    android:text="从此不再孤单"
+                    android:textColor="@color/_999999"
+                    android:textSize="@dimen/font_size_12sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/def_30dp"
+                    android:layout_height="@dimen/def_30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/def_10dp"
+                    android:src="@mipmap/life_play"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/gainsboro"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/weight_hor"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/weight_ver"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/life_head_talk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bt_gray_no"
+                    android:clickable="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/life_head_task_topic_tv"
+                        style="@style/life_head_task_tv"
+                        android:text="话题圈"
+                        android:textColor="@color/_666666"
+                        android:textSize="@dimen/font_size_15"/>
+
+                    <TextView
+                        style="@style/life_head_task_tv"
+                        android:layout_below="@id/life_head_task_topic_tv"
+                        android:layout_marginTop="3dp"
+                        android:text="大家一起说"
+                        android:textColor="@color/_999999"
+                        android:textSize="@dimen/font_size_12sp"/>
+
+                    <ImageView
+                        style="@style/life_head_task_iv"
+                        android:src="@mipmap/life_talk"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gainsboro"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/weight_ver">
+
+                <RelativeLayout
+                    android:id="@+id/life_head_tree"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bt_gray_no"
+                    android:clickable="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/life_head_task_tv_hole"
+                        style="@style/life_head_task_tv"
+                        android:text="树洞"
+                        android:textColor="@color/_666666"
+                        android:textSize="@dimen/font_size_15"/>
+
+                    <TextView
+                        style="@style/life_head_task_tv"
+                        android:layout_below="@id/life_head_task_tv_hole"
+                        android:layout_marginTop="3dp"
+                        android:text="有情绪就表达"
+                        android:textColor="@color/_999999"
+                        android:textSize="@dimen/font_size_12sp"/>
+
+                    <ImageView
+                        style="@style/life_head_task_iv"
+                        android:src="@mipmap/life_tree"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gainsboro"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/life_head_offer"
+                style="@style/weight_ver"
+                android:background="@drawable/bt_gray_no"
+                android:clickable="true"
+                android:gravity="center_vertical">>
+
+                <TextView
+                    android:id="@+id/life_head_task_tv_job"
+                    style="@style/life_head_task_tv"
+                    android:text="兼职"
+                    android:textColor="@color/_666666"
+                    android:textSize="@dimen/font_size_15"/>
+
+                <TextView
+                    style="@style/life_head_task_tv"
+                    android:layout_below="@id/life_head_task_tv_job"
+                    android:layout_marginTop="3dp"
+                    android:text="课外时间不停赚"
+                    android:textColor="@color/_999999"
+                    android:textSize="@dimen/font_size_12sp"/>
+
+                <ImageView
+                    style="@style/life_head_task_iv"
+                    android:src="@mipmap/life_offer"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

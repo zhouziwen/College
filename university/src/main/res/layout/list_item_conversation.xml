@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/list_item_contact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height">
+
+    <View
+        android:id="@+id/anchor"
+        style="@style/anchor"/>
+
+    <com.zhiyou.colleageapp.appui.widget.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/size_avatar"
+        android:layout_height="@dimen/size_avatar"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:src="@drawable/user_default_avatar"/>
+
+    <TextView
+        android:id="@+id/unread_msg_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/avatar"
+        android:layout_alignRight="@id/avatar"
+        android:layout_alignTop="@id/avatar"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginTop="-3dp"
+        android:background="@drawable/ease_unread_count_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/anchor"
+        android:layout_marginBottom="@dimen/item_margin_4dp"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_toRightOf="@id/avatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/test"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_size_16sp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/font_grey"
+        android:textSize="13sp"/>
+
+    <ImageView
+        android:id="@+id/msg_state"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/anchor"
+        android:layout_marginTop="@dimen/item_margin_4dp"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_toRightOf="@id/avatar"
+        android:src="@drawable/ease_msg_state_fail_resend"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/anchor"
+        android:layout_marginTop="@dimen/item_margin_4dp"
+        android:layout_toEndOf="@id/msg_state"
+        android:layout_toLeftOf="@id/time"
+        android:layout_toRightOf="@id/msg_state"
+        android:layout_toStartOf="@id/time"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/test"
+        android:textColor="@color/font_black_light"
+        android:textSize="14sp"/>
+
+    <ImageView
+        style="@style/imageViewDivider"
+        android:paddingLeft="@dimen/general_margin"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

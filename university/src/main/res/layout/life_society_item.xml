@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/society_item_tp2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/def_10dp"
+        android:paddingRight="@dimen/def_10dp"
+        android:paddingTop="@dimen/def_10dp">
+
+        <LinearLayout
+            android:id="@+id/society_ivtp2_leftlay"
+            style="@style/weight_hor"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/society_ivtp2_left1"
+                style="@style/weight_ver"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/life_beautiful_girl"/>
+
+            <ImageView
+                android:id="@+id/society_ivtp2_left2"
+                style="@style/weight_ver"
+                android:layout_marginTop="@dimen/def_10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/life_beautiful_girl"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/society_ivtp2_center"
+            style="@style/weight_hor"
+            android:layout_marginLeft="@dimen/def_10dp"
+            android:layout_marginRight="@dimen/def_10dp"
+            android:layout_weight="2"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/life_beautiful_girl"/>
+
+        <LinearLayout
+            android:id="@+id/society_ivtp2_rightlay"
+            style="@style/weight_hor"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/society_ivtp2_right1"
+                style="@style/weight_ver"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/life_beautiful_girl"/>
+
+            <ImageView
+                android:id="@+id/society_ivtp2_right2"
+                style="@style/weight_ver"
+                android:layout_marginTop="@dimen/def_10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/life_beautiful_girl"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/def_10dp">
+
+        <ImageView
+            android:id="@+id/society_item_tp1"
+            android:layout_width="@dimen/def_70dp"
+            android:layout_height="@dimen/def_70dp"
+            android:layout_marginRight="@dimen/def_10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/life_beautiful_girl"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/def_40dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/society_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/def_30dp"
+                android:text="中国高校摘程序设计金牌"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_size_15"/>
+
+            <TextView
+                android:id="@+id/society_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="2016-5-30"
+                android:textColor="@color/_999999"
+                android:textSize="@dimen/font_size_13sp"/>
+
+            <TextView
+                android:id="@+id/society_item_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="1024"
+                android:textColor="@color/_999999"
+                android:textSize="@dimen/font_size_13sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

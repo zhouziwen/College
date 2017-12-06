@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/bg_fragment"
+              android:orientation="vertical">
+    <com.zhiyou.colleageapp.appui.widget.AppTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        app:bar_title="@string/Application_and_notify"/>
+
+
+    <ListView
+        android:id="@+id/friend_new_invite_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/divider"
+        android:dividerHeight="@dimen/divider_height"/>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_10sp">10sp</dimen>
+    <dimen name="font_size_12sp">12sp</dimen>
+    <dimen name="font_size_13sp">13sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_15">15sp</dimen>
+    <dimen name="font_size_16sp">16sp</dimen>
+    <dimen name="font_size_18sp">18sp</dimen>
+    <dimen name="font_size_20sp">20sp</dimen>
+    <dimen name="item_margin_4dp">4dp</dimen>
+    <dimen name="gridv_school_item_width">106dp</dimen>
+    <dimen name="general_margin">10dp</dimen>
+    <dimen name="arrow_margin">13dp</dimen>
+    <dimen name="general_margin_right_left">15dp</dimen>
+    <dimen name="margin_13dp">13dp</dimen>
+    <dimen name="general_margin_right">8dp</dimen>
+    <dimen name="dynamic_right_margin">20dp</dimen>
+    <dimen name="dynamic_comment_margin_right">10dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="dynamic_pic_width">75dp</dimen>
+    <dimen name="gender_margin_bottom">2dp</dimen>
+    <dimen name="gender_margin_left">3dp</dimen>
+    <dimen name="border_width">0.5dp</dimen>
+    <dimen name="user_icon_diameter">50dp</dimen>
+    <dimen name="group_name_margin_top">6dp</dimen>
+    <dimen name="group_name_margin_bottom">6dp</dimen>
+    <dimen name="group_tab_item_padding">5dp</dimen>
+    <dimen name="group_state_listview_height">16dp</dimen>
+    <dimen name="tab_strip_margin_left">55dp</dimen>
+    <dimen name="tab_strip_margin_right">10dp</dimen>
+    <dimen name="bg_friend_tab_border_radius">1dp</dimen>
+
+
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="item_height">70dp</dimen>
+    <dimen name="title_bar_height">45dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="list_item_invite_height">59dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <dimen name="chat_nick_margin_left">12dp</dimen>
+    <dimen name="chat_nick_text_size">13sp</dimen>
+
+    <dimen name="textSize_quicksidebar">10sp</dimen>
+    <dimen name="textSize_quicksidebar_choose">15sp</dimen>
+    <dimen name="textSize_quicksidebartips">20sp</dimen>
+    <dimen name="height_quicksidebartips">45dp</dimen>
+    <dimen name="mine_item_margin">13dp</dimen>
+
+    <dimen name="sign_padding">3dp</dimen>
+    <dimen name="user_icon_border_width">0dp</dimen>
+    <dimen name="horizontalListView_divider">10dp</dimen>
+    <dimen name="main_tab_height">55dp</dimen>
+    <dimen name="friend_unread_dot_margin">15dp</dimen>
+
+</resources>

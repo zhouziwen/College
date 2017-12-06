@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/life_common_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/life_common_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/def_10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/def_30dp"
+                android:layout_height="@dimen/def_30dp"
+                android:padding="7dp"
+                android:src="@mipmap/life_zan"/>
+
+            <TextView
+                android:id="@+id/life_common_zannum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="132"
+                android:textColor="#6000"
+                android:textSize="@dimen/font_size_12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/life_common_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/def_25dp"
+            android:text="+1"
+            android:textColor="#af00"
+            android:textSize="@dimen/font_size_14"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/life_common_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/def_30dp"
+            android:layout_height="@dimen/def_30dp"
+            android:padding="7dp"
+            android:src="@mipmap/life_comment"/>
+
+        <TextView
+            android:id="@+id/life_common_commentnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#6000"
+            android:textSize="@dimen/font_size_12sp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/treehole_detail_head_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tree_hole_1"
+        android:padding="@dimen/def_10dp">
+
+        <TextView
+            android:id="@+id/treehole_detail_head_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/def_20dp"
+            android:layout_marginTop="@dimen/def_20dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/def_20dp"
+            android:text="好累啊，从上周四开始就没有好好睡过觉了！好像什么都不敢大睡它三天三夜！"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16sp"/>
+
+        <RelativeLayout
+            android:id="@+id/treehole_detail_head_commentlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/treehole_detail_head_title"
+            android:paddingTop="@dimen/def_8dp">
+
+            <TextView
+                android:id="@+id/treehole_detail_head_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="来自郑州大学"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_12sp"/>
+
+            <include
+                layout="@layout/life_zan_comment_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/treehole_detail_head_container"
+        android:drawableLeft="@mipmap/life_comment"
+        android:drawablePadding="@dimen/def_5dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/def_10dp"
+        android:text="所有评论"
+        android:textColor="#8000"
+        android:textSize="@dimen/font_size_12sp"/>
+</RelativeLayout>

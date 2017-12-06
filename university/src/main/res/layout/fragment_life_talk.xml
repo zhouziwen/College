@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ghostwhite"
+              android:orientation="vertical">
+
+    <com.zhiyou.colleageapp.appui.widget.AppTitleBar
+        android:id="@+id/app_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.zhiyou.colleageapp.appui.widget.listview.HorizontalListView
+        android:id="@+id/life_talk_horizontalListView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="@dimen/def_10dp"
+        android:layout_marginLeft="@dimen/def_15dp"
+        android:layout_marginTop="@dimen/def_10dp"
+        app:dividerWidth="5dp"/>
+
+    <ListView
+        android:id="@+id/life_talk_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/def_10dp"
+        android:divider="@color/ghostwhite"
+        android:dividerHeight="10dp"/>
+</LinearLayout>

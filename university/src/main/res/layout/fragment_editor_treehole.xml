@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ghostwhite"
+              android:orientation="vertical">
+
+    <com.zhiyou.colleageapp.appui.widget.AppTitleBar
+        android:id="@+id/app_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        style="@style/weight_ver"
+        android:layout_weight="3"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/treehole_edit_tvsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/def_10dp"
+            android:text="0/140"
+            android:textColor="#6000"
+            android:textSize="@dimen/font_size_14"/>
+
+        <TextView
+            android:id="@+id/treehole_edit_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/def_10dp"
+            android:text="趁着年轻好好努力"
+            android:textColor="#6000"
+            android:textSize="@dimen/font_size_14"/>
+
+        <EditText
+            android:id="@+id/treehole_edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/treehole_edit_tvsize"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="说说咱学校的那些事~~"
+            android:padding="10dp"
+            android:textColor="#8000"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/weight_ver"
+        android:layout_weight="3"/>
+</LinearLayout>

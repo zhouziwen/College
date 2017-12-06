@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/ghostwhite"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/def_5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/def_15dp">
+
+        <ImageView
+            android:id="@+id/item_avar"
+            android:layout_width="@dimen/def_45dp"
+            android:layout_height="@dimen/def_45dp"
+            android:layout_margin="@dimen/def_13dp"
+            android:src="@mipmap/life_avar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/def_15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/font_size_14"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="10:09"
+                    android:textColor="@color/_999999"
+                    android:textSize="@dimen/font_size_12sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/def_50dp"
+                    android:gravity="center"
+                    android:text="内容container"/>
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/def_10dp"
+                android:paddingTop="@dimen/def_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="点击确认收到"
+                    android:textColor="@color/main_tab_on"
+                    android:textSize="@dimen/font_size_12sp"
+                    android:visibility="invisible"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/weight_hor"
+                        android:background="@null"
+                        android:drawableLeft="@mipmap/life_comment"
+                        android:drawablePadding="@dimen/def_10dp"
+                        android:gravity="center_vertical"
+                        android:text="暂无回复"
+                        android:textColor="@color/main_tab_on"
+                        android:textSize="@dimen/font_size_12sp"/>
+
+                    <TextView
+                        style="@style/weight_hor"
+                        android:background="@null"
+                        android:drawableLeft="@mipmap/msg_no"
+                        android:drawablePadding="@dimen/def_10dp"
+                        android:gravity="center_vertical"
+                        android:text="1人未确认"
+                        android:textColor="@color/main_tab_on"
+                        android:textSize="@dimen/font_size_12sp"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

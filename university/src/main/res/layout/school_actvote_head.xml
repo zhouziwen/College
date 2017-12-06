@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <include layout="@layout/life_avar_zan_share"/>
+
+    <TextView
+        android:id="@+id/school_actvote_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/def_15dp"
+        android:paddingRight="@dimen/def_15dp"
+        android:text="校花评选比赛火热进行中！"
+        android:textColor="#000"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/school_actvote_head_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="@dimen/def_15dp"
+        android:paddingRight="@dimen/def_15dp"
+        android:text="大家都来为你心中的校花投上一票吧！"
+        android:textColor="@color/_999999"
+        android:textSize="14sp"/>
+
+    <com.zhiyou.colleageapp.appui.widget.EaseExpandGridView
+        android:id="@+id/school_actvote_head_votecontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/def_10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"/>
+
+    <ImageView
+        android:id="@+id/school_actvote_head_bigiv"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:padding="@dimen/def_10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/life_beautiful_girl"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/school_actvote_head_votecontainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/def_10dp"
+        android:background="@color/ghostwhite"
+        android:orientation="vertical"
+        android:padding="@dimen/def_10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/def_8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="匿名投票（单选）"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="0人参与投票"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/def_10dp"
+            android:layout_marginTop="@dimen/def_10dp">
+
+            <TextView
+                android:id="@+id/school_actvote_head_votecontainer2_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/life_play_dote"
+                android:drawablePadding="@dimen/def_10dp"
+                android:text="会啊"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/school_actvote_head_votecontainer2_iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/def_10dp"
+                android:paddingRight="@dimen/def_10dp"
+                android:src="@mipmap/life_play_select_shape1"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/school_actvote_head_votecontainer2_progresslay1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/def_25dp"
+            android:layout_marginBottom="@dimen/def_8dp"
+            android:layout_marginTop="-10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/weight_hor"
+                android:layout_height="@dimen/def_10dp"
+                android:layout_weight="4"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/school_actvote_head_votecontainer2_progress1"
+                    style="@style/weight_hor"
+                    android:background="@color/vote_2"/>
+
+                <View
+                    style="@style/weight_hor"
+                    android:background="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/school_actvote_head_votecontainer2_count1"
+                style="@style/weight_hor"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/color_666666"/>
+        </LinearLayout>
+
+        <include layout="@layout/line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/def_10dp">
+
+            <TextView
+                android:id="@+id/school_actvote_head_votecontainer2_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/life_play_dote"
+                android:drawablePadding="@dimen/def_10dp"
+                android:text="不会"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/school_actvote_head_votecontainer2_iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/def_10dp"
+                android:paddingRight="@dimen/def_10dp"
+                android:src="@mipmap/life_play_select_shape1"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/school_actvote_head_votecontainer2_progresslay2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/def_25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/weight_hor"
+                android:layout_height="@dimen/def_10dp"
+                android:layout_weight="4"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/school_actvote_head_votecontainer2_progress2"
+                    style="@style/weight_hor"
+                    android:layout_weight="2.5"
+                    android:background="@color/vote_2"/>
+
+                <View
+                    style="@style/weight_hor"
+                    android:background="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/school_actvote_head_votecontainer2_count2"
+                style="@style/weight_hor"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/color_666666"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/school_actvote_head_btvote"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:background="@drawable/selector_login_btn_bg"
+        android:text="我要投票"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/ghostwhite"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快来评论吧"
+            android:textColor="@color/color_666666"/>
+    </RelativeLayout>
+</LinearLayout>

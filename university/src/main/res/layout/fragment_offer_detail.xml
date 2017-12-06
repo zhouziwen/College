@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <com.zhiyou.colleageapp.appui.widget.AppTitleBar
+        android:id="@+id/app_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/offer_detail_data_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/def_10dp"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/offer_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="招聘发单"
+                android:textColor="#000"
+                android:textSize="@dimen/font_size_16sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@color/holo_red_light"
+                    android:textSize="@dimen/font_size_12sp"/>
+
+                <TextView
+                    android:id="@+id/offer_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="76"
+                    android:textColor="@color/holo_red_light"
+                    android:textSize="@dimen/font_size_14"/>
+
+                <TextView
+                    android:id="@+id/life_offer_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/天"
+                    android:textColor="@color/_999999"
+                    android:textSize="@dimen/font_size_14"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/offer_detail_lay">
+
+            <ImageView
+                style="@style/offer_detail_iv"
+                android:src="@mipmap/offer_date"/>
+
+            <TextView
+                android:id="@+id/offer_detail_date"
+                style="@style/offer_detail_tv"
+                android:text="5/25至5/28"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/offer_detail_lay">
+
+            <ImageView
+                style="@style/offer_detail_iv"
+                android:src="@mipmap/offer_time"/>
+
+            <TextView
+                android:id="@+id/offer_detail_time"
+                style="@style/offer_detail_tv"
+                android:text="0:00-0:00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/offer_detail_lay">
+
+            <ImageView
+                style="@style/offer_detail_iv"
+                android:src="@mipmap/offer_people"/>
+
+            <TextView
+                android:id="@+id/offer_detail_people"
+                style="@style/offer_detail_tv"
+                android:text="共5人"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/offer_detail_lay">
+
+            <ImageView
+                style="@style/offer_detail_iv"
+                android:src="@mipmap/offer_pos"/>
+
+            <TextView
+                android:id="@+id/offer_detail_pos"
+                style="@style/offer_detail_tv"
+                android:text="郑州-二七"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/offer_detail_lay">
+
+            <ImageView
+                style="@style/offer_detail_iv"
+                android:src="@mipmap/offer_end_time"/>
+
+            <TextView
+                android:id="@+id/offer_detail_endtime"
+                style="@style/offer_detail_tv"
+                android:text="5/30截止报名"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/def_10dp"
+            android:layout_marginTop="@dimen/def_20dp"
+            android:background="#40d9b44c">
+
+            <TextView
+                android:id="@+id/offer_detail_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/def_10dp"
+                android:text="到附近幼儿园、小学派发传单和小礼品，留下家长联系方式！要求兼职，能吃苦耐劳，有耐心，右责任心，工资日结加提成"
+                android:textColor="#a000"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/def_10dp"
+            android:layout_marginTop="@dimen/def_10dp"
+            android:background="#40d9b44c">
+
+            <TextView
+                android:id="@+id/offer_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/def_10dp"
+                android:text="吴老师"
+                android:textColor="#a000"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/offer_detail_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offer_detail_name"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/def_10dp"
+                android:text="132131***25621"
+                android:textColor="#a000"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/offer_phone"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

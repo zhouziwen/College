@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/def_5dp"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/def_15dp"
+              android:paddingRight="@dimen/def_15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/def_10dp"
+        android:paddingTop="@dimen/def_10dp">
+
+        <ImageView
+            android:id="@+id/taoyu_item_avar"
+            android:layout_width="@dimen/def_45dp"
+            android:layout_height="@dimen/def_45dp"
+            android:src="@mipmap/life_avar"/>
+
+        <TextView
+            android:id="@+id/taoyu_item_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/def_10dp"
+            android:layout_marginTop="@dimen/def_5dp"
+            android:layout_toRightOf="@id/taoyu_item_avar"
+            android:text="北城之春"
+            android:textColor="@color/_323232"
+            android:textSize="@dimen/font_size_14"/>
+
+        <TextView
+            android:id="@+id/taoyu_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taoyu_item_nick"
+            android:layout_marginLeft="@dimen/def_10dp"
+            android:layout_marginTop="@dimen/def_5dp"
+            android:layout_toRightOf="@id/taoyu_item_avar"
+            android:text="一天前"
+            android:textColor="@color/_CCCCCC"
+            android:textSize="@dimen/font_size_14"/>
+
+        <TextView
+            android:id="@+id/taoyu_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/def_10dp"
+            android:layout_marginTop="@dimen/def_10dp"
+            android:text="0.00"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_size_14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/def_10dp"
+            android:layout_toLeftOf="@id/taoyu_item_price"
+            android:text="￥ "
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_size_14"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/taoyu_item_imgs"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/taoyu_item_img1"
+            style="@style/weight_hor"
+            android:background="#ececec"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:id="@+id/taoyu_item_img2"
+            style="@style/weight_hor"
+            android:layout_marginLeft="@dimen/def_10dp"
+            android:background="#ececec"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/taoyu_item_img3"
+            style="@style/weight_hor"
+            android:layout_marginLeft="@dimen/def_10dp"
+            android:background="#ececec"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/taoyu_item_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/def_10dp"
+        android:layout_marginTop="@dimen/def_10dp"
+        android:lineSpacingExtra="@dimen/def_5dp"
+        android:lines="2"
+        android:text="暂无描述"
+        android:textColor="@color/_666666"
+        android:textSize="@dimen/font_size_12sp"/>
+
+    <include layout="@layout/line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/life_item_posimg"
+            android:layout_width="@dimen/def_20dp"
+            android:layout_height="@dimen/def_20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/life_position"/>
+
+        <TextView
+            android:id="@+id/taoyu_item_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/def_5dp"
+            android:layout_marginStart="@dimen/def_5dp"
+            android:layout_toRightOf="@id/life_item_posimg"
+            android:text="来自郑州大学"
+            android:textColor="@color/_CCCCCC"
+            android:textSize="@dimen/font_size_12sp"/>
+
+        <include
+            layout="@layout/life_zan_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

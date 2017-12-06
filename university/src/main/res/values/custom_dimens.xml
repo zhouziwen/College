@@ -1,0 +1,24 @@
+<resources>
+    <dimen name="part_firstlay">100dp</dimen>
+    <dimen name="part_secondlay">180dp</dimen>
+    <dimen name="def_85dp">85dp</dimen>
+    <dimen name="def_80dp">80dp</dimen>
+    <dimen name="def_70dp">70dp</dimen>
+    <dimen name="def_65dp">65dp</dimen>
+    <dimen name="def_60dp">60dp</dimen>
+    <dimen name="def_50dp">50dp</dimen>
+    <dimen name="def_45dp">45dp</dimen>
+    <dimen name="def_40dp">40dp</dimen>
+    <dimen name="def_35dp">35dp</dimen>
+    <dimen name="def_30dp">30dp</dimen>
+    <dimen name="def_27dp">27dp</dimen>
+    <dimen name="def_25dp">25dp</dimen>
+    <dimen name="def_23dp">23dp</dimen>
+    <dimen name="def_20dp">20dp</dimen>
+    <dimen name="def_18dp">18dp</dimen>
+    <dimen name="def_15dp">15dp</dimen>
+    <dimen name="def_13dp">13dp</dimen>
+    <dimen name="def_10dp">10dp</dimen>
+    <dimen name="def_8dp">8dp</dimen>
+    <dimen name="def_5dp">5dp</dimen>
+</resources>

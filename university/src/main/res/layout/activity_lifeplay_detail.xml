@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghostwhite">
+
+    <com.zhiyou.colleageapp.appui.widget.AppTitleBar
+        android:id="@+id/app_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        app:back_img="@drawable/fragment_back_arrow" />
+
+    <include
+        android:id="@+id/input_lay"
+        layout="@layout/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/input_lay"
+        android:layout_below="@id/app_title_bar"
+        android:layout_marginBottom="@dimen/def_10dp"
+        android:divider="@color/ghostwhite"
+        android:dividerHeight="6dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_fragment"
+                android:descendantFocusability="blocksDescendants">
+
+    <View
+        android:id="@+id/mine_space"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/mine_space"
+        android:background="@drawable/bt_gray_no">
+
+        <ImageView
+            android:id="@+id/mine_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/mine_item_margin"
+            android:layout_marginRight="@dimen/mine_item_margin"
+            android:scaleType="center"
+            android:src="@drawable/right_arrow"/>
+
+        <com.zhiyou.colleageapp.appui.widget.CircleImageView
+            android:id="@+id/mine_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:src="@mipmap/def_avatar"
+            android:layout_toLeftOf="@id/mine_arrow"
+            android:layout_toStartOf="@id/mine_arrow"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/mine_two_dimension_code"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/mine_avatar"
+            android:layout_toStartOf="@id/mine_avatar"
+            android:padding="@dimen/def_10dp"
+            android:src="@mipmap/two_dimension_code"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/mine_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/mine_item_margin"
+            android:layout_marginStart="@dimen/mine_item_margin"
+            android:layout_marginRight="@dimen/def_10dp"
+            android:layout_marginEnd="@dimen/def_10dp"
+            android:layout_toLeftOf="@id/mine_two_dimension_code"
+            android:layout_toStartOf="@id/mine_two_dimension_code"
+            android:ellipsize="end"
+            android:textColor="#6000"
+            android:textSize="@dimen/font_size_14"/>
+
+        <TextView
+            android:id="@+id/mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/mine_item_margin"
+            android:layout_marginStart="@dimen/mine_item_margin"
+            android:ellipsize="end"
+            android:text="@string/test"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/font_size_14"/>
+
+
+        <ImageView
+            android:id="@+id/mine_top_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/mine_item_margin"
+            android:layout_marginRight="@dimen/mine_item_margin"
+            android:background="@color/white"
+            android:src="@color/divider"/>
+    </RelativeLayout>
+</RelativeLayout>

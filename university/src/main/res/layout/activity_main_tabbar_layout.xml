@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/main_tab_height"
+              android:layout_alignParentBottom="true"
+              android:orientation="horizontal"
+              android:background="@color/white"
+    >
+
+    <RadioButton
+        android:id="@+id/main_tab_campus"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/tab_state_school"
+        android:button="@null"
+        android:checked="true"
+        />
+
+    <RadioButton
+        android:id="@+id/main_tab_life"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/tab_state_life"
+        android:button="@null"
+        />
+
+    <RelativeLayout
+        android:id="@+id/tab_friend"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/main_tab_friend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_state_friend"
+            android:button="@null"/>
+
+        <ImageView
+            android:id="@+id/friend_tab_unread_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/friend_unread_dot_margin"
+            android:layout_marginRight="@dimen/friend_unread_dot_margin"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ease_unread_dot"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RadioButton
+        android:id="@+id/main_tab_msg"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/tab_state_message"
+        android:button="@null"
+        />
+
+    <RadioButton
+        android:id="@+id/main_tab_mine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/tab_state_person"
+        android:button="@null"
+        />
+</LinearLayout>

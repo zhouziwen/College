@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ghostwhite"
+              android:orientation="vertical">
+
+    <com.zhiyou.colleageapp.appui.widget.AppTitleBar
+        android:id="@+id/app_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        style="@style/weight_ver"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/taoyu_edit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="标题"
+            android:textColor="#6000"
+            android:textSize="@dimen/font_size_14"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/taoyu_edit_title"
+            android:background="#2000"/>
+
+        <RelativeLayout
+            android:id="@+id/taoyu_edit_addimg"
+            android:layout_width="@dimen/def_70dp"
+            android:layout_height="@dimen/def_70dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/taoyu_edit_addimg_tempiv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/taoyu_add"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="30dp"
+                android:text="添加商品"
+                android:textColor="#6000"/>
+        </RelativeLayout>
+
+        <com.zhiyou.colleageapp.appui.widget.listview.HorizontalListView
+            android:id="@+id/taoyu_edit_addimg_listview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/taoyu_edit_addimg"/>
+
+        <EditText
+            android:id="@+id/taoyu_edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/taoyu_edit_addimg_listview"
+            android:layout_below="@id/taoyu_edit_title"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="详细描述几成新，购买时间会引起更多人的关注哦!"
+            android:paddingTop="10dp"
+            android:textColor="#8000"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/weight_ver"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/def_10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/taoyu_edit_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/def_10dp"
+                android:text="价格"
+                android:textColor="#8000"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/taoyu_pub_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/taoyu_edit_price"
+                android:background="@null"
+                android:hint="￥ 0.00"
+                android:padding="@dimen/def_10dp"
+                android:textColor="#8000"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/taoyu_edit_lei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/def_10dp"
+                android:text="分类"
+                android:textColor="#8000"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/taoyu_pub_lei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/taoyu_edit_lei"
+                android:padding="@dimen/def_10dp"
+                android:text="请选择分类"
+                android:textColor="#8000"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/right_arrow"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#2000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/taoyu_edit_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/def_10dp"
+                android:text="学校"
+                android:textColor="#8000"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/taoyu_pub_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/taoyu_edit_school"
+                android:background="@null"
+                android:padding="@dimen/def_10dp"
+                android:text="郑州大学 "
+                android:textColor="#8000"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#2000"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

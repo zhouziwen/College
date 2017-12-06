@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/sh_group_edit"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginEnd="@dimen/general_margin_right_left"
+        android:layout_marginLeft="@dimen/general_margin_right_left"
+        android:layout_marginRight="@dimen/general_margin_right_left"
+        android:layout_marginStart="@dimen/general_margin_right_left"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edit"
+        android:hint="@string/sh_group_hint"
+        android:lines="1"
+        android:textSize="@dimen/font_size_12sp"
+        android:paddingEnd="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/gray"/>
+
+    <com.zhiyou.colleageapp.appui.widget.listview.HorizontalListView
+        android:id="@+id/sh_group_listView_groupType"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_below="@id/sh_group_edit"
+        android:layout_marginBottom="@dimen/general_margin_right_left"
+        android:layout_marginLeft="@dimen/general_margin_right_left"
+        android:layout_marginStart="@dimen/general_margin_right_left"
+        android:layout_marginTop="@dimen/general_margin_right_left"/>
+
+    <TextView
+        android:id="@+id/sh_group_loudspeaker_recruit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_below="@id/sh_group_listView_groupType"
+        android:drawableLeft="@drawable/loudspeaker"
+        android:drawablePadding="@dimen/general_margin_right_left"
+        android:drawableStart="@drawable/loudspeaker"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/general_margin_right_left"
+        android:paddingLeft="@dimen/general_margin_right_left"
+        android:paddingRight="@dimen/general_margin_right_left"
+        android:paddingStart="@dimen/general_margin_right_left"
+        android:text="正在招募的群"/>
+
+    <View
+        android:id="@+id/group_line"
+        style="@style/group_list_divider"
+        android:layout_below="@id/sh_group_loudspeaker_recruit"/>
+
+    <ListView
+        android:id="@+id/sh_group_listView_recruit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/group_line"
+        android:divider="@color/divider"
+        android:dividerHeight="0.5dp"/>
+
+</RelativeLayout>

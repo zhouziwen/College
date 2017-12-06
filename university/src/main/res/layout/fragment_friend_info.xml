@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_fragment"
+                android:orientation="vertical">
+
+    <com.zhiyou.colleageapp.appui.widget.AppTitleBar
+        android:id="@+id/app_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        app:action_img="@mipmap/friend_detail_action"
+        app:back_img="@drawable/fragment_back_arrow"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_title_bar"
+        android:layout_marginTop="@dimen/general_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/friend_detail_layout_dynamic"
+                style="@style/friend_detail_layout"
+                android:background="@drawable/bg_selector_item_common"
+                >
+
+                <TextView
+                    android:id="@+id/friend_detail_label_dynamic"
+                    style="@style/text_size_16_black_light"
+                    android:text="@string/dynamic"
+                    />
+
+                <TextView
+                    android:id="@+id/friend_detail_label_dynamic_count"
+                    style="@style/text_size_16_blue"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/friend_detail_label_dynamic"
+                    android:layout_toRightOf="@id/friend_detail_label_dynamic"
+                    android:text="20"
+
+                    />
+
+                <com.zhiyou.colleageapp.appui.widget.listview.HorizontalListView
+                    android:id="@+id/friend_detail_dynamic_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/friend_detail_label_dynamic"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:divider="@color/transparent"
+                    app:dividerWidth="@dimen/general_margin"/>
+
+                <ImageView
+                    style="@style/friend_detail_arrow"
+                    android:layout_alignBottom="@id/friend_detail_dynamic_listView"
+                    android:layout_alignTop="@id/friend_detail_dynamic_listView"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/friend_detail_layout_person_detail"
+                style="@style/friend_detail_layout"
+                >
+
+                <TextView
+                    android:id="@+id/friend_detail_label_person"
+                    style="@style/text_size_16_black_light"
+                    android:text="@string/global_person_info"/>
+
+                <ListView
+                    android:id="@+id/friend_detail_person_info_listView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/friend_detail_label_person"
+                    android:scrollbars="none"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/friend_detail_layout_add_group"
+                style="@style/friend_detail_layout"
+                >
+
+                <TextView
+                    android:id="@+id/friend_detail_label_add_group"
+                    style="@style/text_size_16_black_light"
+                    android:text="@string/friend_detail_add_group"/>
+
+                <TextView
+                    android:id="@+id/friend_detail_label_add_group_count"
+                    style="@style/text_size_16_blue"/>
+
+                <com.zhiyou.colleageapp.appui.widget.listview.ExpandListView
+                    android:id="@+id/friend_detail_person_group_listView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/friend_detail_label_add_group"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:scrollbars="none"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/friend_detail_layout_concern_topic"
+                style="@style/friend_detail_layout"
+                >
+
+                <TextView
+                    android:id="@+id/friend_detail_label_concern_topic"
+                    style="@style/text_size_16_black_light"
+                    android:text="@string/friend_info_concern_topic"/>
+
+                <TextView
+                    android:id="@+id/friend_detail_label_concern_topic_count"
+                    style="@style/text_size_16_blue"/>
+
+                <com.zhiyou.colleageapp.appui.widget.EaseExpandGridView
+                    android:id="@+id/friend_detail_person_concern_topic_gridView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/friend_detail_label_concern_topic"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:scrollbars="none"/>
+
+                <ImageView
+                    style="@style/friend_detail_arrow"
+                    android:layout_alignBottom="@id/friend_detail_person_concern_topic_gridView"
+                    android:layout_alignTop="@id/friend_detail_person_concern_topic_gridView"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/friend_detail_add_friend_btn"
+        style="@style/friend_detail_btn"
+        android:text="@string/friend_detail_add_friend"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/friend_detail_sent_msg_btn"
+        style="@style/friend_detail_btn"
+        android:text="@string/friend_detail_send_msg"
+        />
+</RelativeLayout>

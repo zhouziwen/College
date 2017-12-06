@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.zhiyou.colleageapp.appui.widget.CircleImageView
+        android:id="@+id/dynamic_item_user_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginStart="@dimen/general_margin"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="@dimen/general_margin_right"
+        android:layout_marginEnd="@dimen/general_margin_right"
+        android:src="@drawable/test_person_01"
+        app:border_color="@android:color/transparent"
+        app:border_width="0dp"
+        app:is_img="true"/>
+
+    <TextView
+        android:id="@+id/dynamic_item_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dynamic_item_user_icon"
+        android:layout_toEndOf="@id/dynamic_item_user_icon"
+        android:lines="1"
+        android:maxLength="10"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/test_user_name"
+        android:textColor="@color/main_tab_on"
+        android:textSize="@dimen/font_size_13sp"/>
+
+    <ImageView
+        android:id="@+id/dynamic_item_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/dynamic_item_user_name"
+        android:layout_toRightOf="@id/dynamic_item_user_name"
+        android:layout_toEndOf="@id/dynamic_item_user_name"
+        android:layout_marginBottom="@dimen/gender_margin_bottom"
+        android:src="@drawable/female"/>
+
+    <TextView
+        android:id="@+id/dynamic_item_belong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dynamic_item_user_icon"
+        android:layout_toEndOf="@+id/dynamic_item_user_icon"
+        android:layout_below="@id/dynamic_item_user_name"
+        android:lines="1"
+        android:maxLength="10"
+        android:text="@string/college"
+        android:textColor="@color/_989898"
+        android:textSize="@dimen/font_size_12sp"/>
+
+    <TextView
+        android:id="@+id/dynamic_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dynamic_right_margin"
+        android:layout_marginEnd="@dimen/dynamic_right_margin"
+        android:textColor="@color/_343434"
+        android:textSize="@dimen/font_size_13sp"
+        android:layout_below="@id/dynamic_item_user_icon"
+        android:layout_toRightOf="@id/dynamic_item_user_icon"
+        android:layout_toEndOf="@id/dynamic_item_user_icon"
+        android:lines="2"
+        android:text="content"/>
+    
+    <com.zhiyou.colleageapp.appui.widget.listview.HorizontalListView
+        android:id="@+id/dynamic_item_pic_listView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/dynamic_item_content"
+        android:layout_toRightOf="@id/dynamic_item_user_icon"
+        android:layout_toEndOf="@id/dynamic_item_user_icon"
+        android:layout_marginRight="@dimen/dynamic_right_margin"
+        android:layout_marginEnd="@dimen/dynamic_right_margin"/>
+
+    <TextView
+        android:id="@+id/dynamic_item_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/_CCCCCC"
+        android:textSize="@dimen/font_size_12sp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/dynamic_item_user_icon"
+        android:layout_toEndOf="@id/dynamic_item_user_icon"
+        android:text="1分钟前"/>
+    
+    <TextView
+        android:id="@+id/dynamic_item_tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_12sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="@dimen/dynamic_comment_margin_right"
+        android:drawableLeft="@drawable/comment"
+        android:drawableStart="@drawable/comment"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@id/dynamic_item_tv_time"
+        android:text="2"/>
+
+    <TextView
+        android:id="@+id/dynamic_item_tv_prise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_12sp"
+        android:layout_marginRight="@dimen/dynamic_comment_margin_right"
+        android:layout_marginEnd="@dimen/dynamic_comment_margin_right"
+        android:drawableLeft="@drawable/prise"
+        android:drawableStart="@drawable/prise"
+        android:layout_toLeftOf="@id/dynamic_item_tv_comment"
+        android:layout_toStartOf="@id/dynamic_item_tv_comment"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@id/dynamic_item_tv_time"
+        android:text="3"/>
+
+
+
+</RelativeLayout>

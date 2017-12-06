@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/life_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/life_fire"
+        android:drawablePadding="@dimen/def_5dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/def_15dp"
+        android:text="校花评选比赛火热进行中！"
+        android:textColor="#e000"
+        android:textSize="@dimen/font_size_16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ghostwhite"/>
+
+    <include layout="@layout/life_avar_zan_share"/>
+
+    <ImageView
+        android:id="@+id/life_item_bigiv"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:padding="@dimen/def_10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/life_beautiful_girl"/>
+</LinearLayout>

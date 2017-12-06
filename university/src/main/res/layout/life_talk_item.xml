@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/def_10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/def_5dp"
+        android:layout_marginTop="@dimen/def_5dp"
+        android:padding="@dimen/def_5dp"
+        android:text="#像动漫人物的朋友#"
+        android:textSize="@dimen/font_size_12sp" />
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容contanier" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="@dimen/def_5dp">
+
+        <TextView
+            android:id="@+id/life_talk_item_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="关注 123"
+            android:textColor="@color/_999999"
+            android:textSize="@dimen/font_size_12sp" />
+
+        <include
+            android:id="@+id/line"
+            layout="@layout/line_ver"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/def_5dp"
+            android:layout_toRightOf="@id/life_talk_item_view" />
+
+        <TextView
+            android:id="@+id/life_talk_item_discuss"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/line"
+            android:gravity="center_vertical"
+            android:text="讨论 2"
+            android:textColor="@color/_999999"
+            android:textSize="@dimen/font_size_12sp" />
+
+        <Button
+            android:layout_width="@dimen/def_70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_login_btn_bg"
+            android:text="关注" />
+    </RelativeLayout>
+</LinearLayout>

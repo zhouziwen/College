@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/def_10dp"
+                android:paddingLeft="@dimen/def_5dp"
+                android:paddingRight="@dimen/def_5dp">
+
+
+    <ImageView
+        android:id="@+id/life_common_avar"
+        android:layout_width="@dimen/def_50dp"
+        android:layout_height="@dimen/def_50dp"
+        android:src="@mipmap/life_avar"/>
+
+    <TextView
+        android:id="@+id/life_common_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/def_10dp"
+        android:layout_marginTop="@dimen/def_5dp"
+        android:layout_toRightOf="@id/life_common_avar"
+        android:text="北城之春"
+        android:textColor="#e000"
+        android:textSize="@dimen/font_size_14"/>
+
+    <TextView
+        android:id="@+id/life_common_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/life_common_nick"
+        android:layout_marginLeft="@dimen/def_10dp"
+        android:layout_marginTop="@dimen/def_5dp"
+        android:layout_toRightOf="@id/life_common_avar"
+        android:text="05-18 10:04"
+        android:textColor="#6000"
+        android:textSize="@dimen/font_size_12sp"/>
+
+    <ImageView
+        android:id="@+id/life_common_share"
+        android:layout_width="@dimen/def_30dp"
+        android:layout_height="@dimen/def_30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-7dp"
+        android:paddingBottom="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="7dp"
+        android:src="@mipmap/life_share"/>
+
+    <LinearLayout
+        android:id="@+id/life_common_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/life_common_avar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/life_common_share"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/def_30dp"
+            android:layout_height="@dimen/def_30dp"
+            android:padding="7dp"
+            android:src="@mipmap/life_comment"/>
+
+        <TextView
+            android:id="@+id/life_common_commentnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#6000"
+            android:textSize="@dimen/font_size_12sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/life_common_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/life_common_avar"
+        android:layout_alignTop="@id/life_common_avar"
+        android:layout_marginBottom="-2dp"
+        android:layout_marginRight="@dimen/def_10dp"
+        android:layout_toLeftOf="@id/life_common_lay"
+        android:layout_toStartOf="@id/life_common_lay">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/def_30dp"
+                android:layout_height="@dimen/def_30dp"
+                android:padding="7dp"
+                android:src="@mipmap/life_zan"/>
+
+            <TextView
+                android:id="@+id/life_common_zannum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="132"
+                android:textColor="#6000"
+                android:textSize="@dimen/font_size_12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/life_common_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="+1"
+            android:textColor="#af00"
+            android:textSize="@dimen/font_size_14"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+</RelativeLayout>

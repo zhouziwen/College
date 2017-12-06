@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/bt_gray_no"
+                android:paddingEnd="@dimen/margin_13dp"
+                android:paddingLeft="@dimen/margin_13dp"
+                android:paddingRight="@dimen/margin_13dp"
+                android:paddingStart="@dimen/margin_13dp">
+
+    <View
+        android:id="@+id/mine_anchor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:background="@color/main_tab_off"/>
+
+    <com.zhiyou.colleageapp.appui.widget.CircleImageView
+        android:id="@+id/img_header_person"
+        android:layout_width="@dimen/user_icon_diameter"
+        android:layout_height="@dimen/user_icon_diameter"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/general_margin_right_left"
+        android:src="@mipmap/def_avatar"
+        android:layout_marginRight="@dimen/general_margin_right_left"/>
+
+
+    <!-- 性别符号 drawableRight -->
+    <TextView
+        android:id="@+id/txt_name_header_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mine_anchor"
+        android:layout_marginBottom="4dp"
+        android:layout_toEndOf="@id/img_header_person"
+        android:layout_toRightOf="@id/img_header_person"
+        android:textSize="@dimen/font_size_15"/>
+
+    <ImageView
+        android:id="@+id/mine_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txt_name_header_person"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@id/txt_name_header_person"
+        android:layout_toRightOf="@id/txt_name_header_person"
+        android:src="@drawable/male"/>
+
+    <TextView
+        android:id="@+id/mine_header_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txt_name_header_person"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/mine_gender"
+        android:background="@drawable/selector_bg_sign"
+        android:paddingEnd="@dimen/sign_padding"
+        android:paddingLeft="@dimen/sign_padding"
+        android:paddingRight="@dimen/sign_padding"
+        android:paddingStart="@dimen/sign_padding"
+        android:text="@string/sign"
+        android:textColor="@color/main_tab_on"
+        android:textSize="@dimen/font_size_12sp"/>
+
+    <TextView
+        android:id="@+id/mine_header_belong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name_header_person"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/img_header_person"
+        android:layout_toRightOf="@id/img_header_person"
+        android:text="@string/not_login"
+        android:textSize="@dimen/font_size_13sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/right_arrow"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/list_item_contact"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_selector_item_common"
+                android:layout_height="@dimen/item_height">
+
+
+
+    <com.zhiyou.colleageapp.appui.widget.CircleImageView
+        android:id="@+id/list_item_contact_avatar"
+        android:layout_width="@dimen/size_avatar"
+        android:layout_height="@dimen/size_avatar"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:src="@drawable/user_default_avatar"
+        app:is_img="true"/>
+
+    <TextView
+        android:id="@+id/list_item_contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/list_item_contact_avatar"
+        android:layout_toRightOf="@id/list_item_contact_avatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/test"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_size_16sp"/>
+
+    <CheckBox
+        android:id="@+id/list_item_contact_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:button="@mipmap/add_user_off"
+        android:visibility="gone"
+        android:gravity="center"
+        />
+
+
+    <ImageView
+        style="@style/imageViewDivider"
+        android:paddingLeft="@dimen/general_margin"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
